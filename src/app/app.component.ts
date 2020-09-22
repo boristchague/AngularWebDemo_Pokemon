@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Pokemon } from './pokemon';
 import { POKEMONS } from './mock-pokemons';
+
 
   
 @Component({
@@ -30,4 +31,6 @@ export class AppComponent implements OnInit {
   onKey(event: any){
       this.value = "Bonjour" + event.target.value;
   }
+
+
 }
