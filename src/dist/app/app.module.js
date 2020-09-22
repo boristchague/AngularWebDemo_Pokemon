@@ -13,7 +13,7 @@ var app_component_1 = require("./app.component");
 var list_pokemon_component_1 = require("./list-pokemon.component");
 var detail_pokemon_component_1 = require("./detail-pokemon.component");
 var border_card_directive_1 = require("./border-card.directive");
-//import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
+var pokemon_type_color_pipe_1 = require("./pokemon-type-color.pipe");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -26,7 +26,7 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 app_component_1.AppComponent,
                 border_card_directive_1.BorderCardDirective,
-                //PokemonTypeColorPipe,
+                pokemon_type_color_pipe_1.PokemonTypeColorPipe,
                 list_pokemon_component_1.ListPokemonComponent,
                 detail_pokemon_component_1.DetailPokemonComponent
             ],
