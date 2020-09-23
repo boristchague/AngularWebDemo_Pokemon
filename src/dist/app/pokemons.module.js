@@ -7,39 +7,37 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_routing_module_1 = require("./app-routing.module");
+var common_1 = require("@angular/common");
+var pokemons_routing_module_1 = require("./pokemons-routing.module");
 var forms_1 = require("@angular/forms");
-var app_component_1 = require("./app.component");
 var list_pokemon_component_1 = require("./list-pokemon.component");
 var detail_pokemon_component_1 = require("./detail-pokemon.component");
 var edit_pokemon_component_1 = require("./edit-pokemon.component");
 var pokemon_form_component_1 = require("./pokemon-form.component");
 var border_card_directive_1 = require("./border-card.directive");
 var pokemon_type_color_pipe_1 = require("./pokemon-type-color.pipe");
-var AppModule = /** @class */ (function () {
-    function AppModule() {
+var PokemonsModule = /** @class */ (function () {
+    function PokemonsModule() {
     }
-    AppModule = __decorate([
+    PokemonsModule = __decorate([
         core_1.NgModule({
             imports: [
-                platform_browser_1.BrowserModule,
-                app_routing_module_1.AppRoutingModule,
-                forms_1.FormsModule
+                common_1.CommonModule,
+                forms_1.FormsModule,
+                pokemons_routing_module_1.PokemonRoutingModule
             ],
             declarations: [
-                app_component_1.AppComponent,
-                border_card_directive_1.BorderCardDirective,
-                edit_pokemon_component_1.EditPokemonComponent,
-                pokemon_type_color_pipe_1.PokemonTypeColorPipe,
                 list_pokemon_component_1.ListPokemonComponent,
+                detail_pokemon_component_1.DetailPokemonComponent,
                 pokemon_form_component_1.PokemonFormComponent,
-                detail_pokemon_component_1.DetailPokemonComponent
+                edit_pokemon_component_1.EditPokemonComponent,
+                border_card_directive_1.BorderCardDirective,
+                pokemon_type_color_pipe_1.PokemonTypeColorPipe
             ],
-            bootstrap: [app_component_1.AppComponent]
+            providers: []
         })
-    ], AppModule);
-    return AppModule;
+    ], PokemonsModule);
+    return PokemonsModule;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.PokemonsModule = PokemonsModule;
+//# sourceMappingURL=pokemons.module.js.map
